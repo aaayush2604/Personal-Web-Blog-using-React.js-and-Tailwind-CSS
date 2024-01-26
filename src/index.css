@@ -1,0 +1,116 @@
+@import '@fontsource/poppins';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+body{
+  @apply bg-orange-200;
+}
+
+.BookCard{
+  @apply relative grid h-[30rem] w-full max-w-[25rem] flex-col items-end justify-center overflow-hidden rounded-xl bg-white bg-clip-border text-center text-gray-700;
+}
+
+.BookCard:hover{
+  box-shadow: 10px 15px #7b341e;
+}
+
+.BookCardInner{
+  @apply absolute inset-0 m-0 h-full w-full overflow-hidden rounded-none bg-transparent bg-[url('download.jpeg')] bg-cover bg-clip-border bg-center text-gray-700 shadow-none;
+}
+
+.TextBox{
+  @apply relative p-6 px-6 py-14 md:px-12 ;
+}
+
+.Genre{
+  @apply relative inline-block -mr-4 z-10 h-[50px] w-[50px] !rounded-full border-2 border-white object-cover object-center;
+}
+
+.BookAuthor{
+  @apply block mb-4 font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-gray-400;
+}
+
+.BookTitle{
+  
+  @apply mb-6 block font-sans text-4xl font-medium leading-[1.5] tracking-normal text-white antialiased;
+}
+
+.ObjectGrid{
+  @apply  grid grid-cols-3 mx-7 my-7 gap-x-[5vw] gap-y-[5vw] justify-items-center;
+}
+
+@media(max-width:700px){
+  .ObjectGrid{
+    @apply grid grid-cols-2 gap-3 gap-y-8 justify-items-center;
+  }
+}
+
+@media(max-width: 630px){
+  .ObjectGrid{
+    @apply grid grid-cols-1 justify-items-center; 
+  }
+}
+
+.BookReviewText{
+  @apply overflow-auto;
+}
+
+.GenreContainer{
+  @apply  flex flex-row justify-center;
+}
+
+.PageTitle{
+  font-family: 'Gloria Hallelujah', sans-serif;
+  @apply text-6xl text-center underline mt-3;
+}
+
+.LandingPage{
+  
+  @apply h-[70vh];
+  background-color: #7b341e;
+}
+
+
+.HomeTitle{
+  font-family: 'Gloria Hallelujah', sans-serif;
+  @apply text-[8vw] text-white w-[40vw] h-min ml-10;
+}
+
+.HomeIntroText{
+  @apply text-white w-[60vw] text-[2vw] h-min ml-3;
+}
+ 
+@media(max-width: 900px){
+  .HomeIntroText{
+    display:none;
+  }
+  .LandingPage{
+    @apply flex justify-center items-center;
+  }
+  .HomeTitle{
+    @apply text-[13vw] w-[80vw] text-center ml-0;
+  }
+}
+
+.CurrentRead{
+  @apply bg-white flex h-fit justify-around items-center pt-[5vw] w-[100%];
+}
+
+.CRdesc{
+  @apply w-[50vw] font-serif text-[2vw];
+}
+
+.CRImage{
+  @apply w-[40vw] ;
+}
+
+.CRTitle{
+  font-family: 'Gloria Hallelujah', sans-serif;
+  @apply bg-white text-[8vw] text-center pt-[5vw] underline mt-0;
+}
+
+
