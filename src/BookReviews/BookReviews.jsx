@@ -5,9 +5,8 @@ import data from './data.json';
 const ReviewObject=()=>{
     return<>
       <div className="BookCard">
-    <div className="BookCardInner">
+    <img src={data[0].Image} className="BookCardInner"/>
       <div className="absolute inset-0 w-full h-full to-bg-black-10 bg-gradient-to-t from-black/80 via-black/50"></div>
-    </div>
     <div className="TextBox">
       <h2 className="BookTitle">
         The Sun & The Star

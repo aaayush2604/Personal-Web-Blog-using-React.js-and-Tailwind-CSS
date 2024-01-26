@@ -13,7 +13,7 @@
   }
   
   .BookCardInner{
-    @apply absolute bg-[url('download.jpeg')] inset-0 m-0 h-full w-full overflow-hidden rounded-none bg-transparent bg-cover bg-clip-border bg-center text-gray-700 shadow-none;
+    @apply absolute /*bg-[url('download.jpeg')]*/ inset-0 m-0 h-full w-full overflow-hidden rounded-none bg-transparent bg-cover bg-clip-border bg-center text-gray-700 shadow-none;
   }
   
   .TextBox{
