@@ -2,21 +2,25 @@
     {
         "Title":"The Sun and The Star",
         "Author":"Rick Riordan",
-        "Image":"./src/BookReviews/images/the_sun_and_the_star.jpg"
+        "Image":"./src/BookReviews/images/the_sun_and_the_star.jpg",
+        "Genre":["Fantasy","Romance","Action"]
     },
     {
         "Title":"The Amulet of Samarkand",
         "Author":"Jonathan Stroud",
-        "Image":"./src/BookReviews/images/amulet_of_samarkand.jpg"
+        "Image":"./src/BookReviews/images/amulet_of_samarkand.jpg",
+        "Genre":["Action","Fantasy","Romance"]
     },
     {
         "Title":"Where the Crawdads Sing",
         "Author":"Delia Owens",
-        "Image":"./src/BookReviews/images/where_the_crawdads_sing.jpg"
+        "Image":"./src/BookReviews/images/where_the_crawdads_sing.jpg",
+        "Genre":["Fantasy","Romance","Action"]
     },
     {
         "Title":"Crime and Punishment",
         "Author":"Fyodor Dostoyevsky",
-        "Image":"./src/BookReviews/images/crime_and_punishment.jpg"
+        "Image":"./src/BookReviews/images/crime_and_punishment.jpg",
+        "Genre":["Fantasy","Romance","Action"]
     }
 ]

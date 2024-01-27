@@ -21,7 +21,7 @@
   }
   
   .Genre{
-    @apply relative inline-block -mr-4 z-10 h-[50px] w-[50px] !rounded-full border-2 border-white object-cover object-center;
+    @apply relative bg-yellow-50 border-red-600 inline-block -mr-4 z-10 h-[50px] w-[50px] !rounded-full border-2 border-white object-cover object-center;
   }
   
   .BookAuthor{
