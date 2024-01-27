@@ -2,17 +2,19 @@ import './BookReviews.css';
 import data from './data.json';
 
 
-const ReviewObject=()=>{
+const ReviewObject=({Title,Author,Image})=>{
+  console.log(Title);
     return<>
       <div className="BookCard">
-    <img src={data[0].Image} className="BookCardInner"/>
+        {console.log(Image)}
+    <img src={Image} className="BookCardInner"/>
       <div className="absolute inset-0 w-full h-full to-bg-black-10 bg-gradient-to-t from-black/80 via-black/50"></div>
     <div className="TextBox">
       <h2 className="BookTitle">
-        The Sun & The Star
+        {Title}
       </h2>
       <h5 className="BookAuthor">
-        Tania Andrew
+        {Author}
       </h5>
       <div className="GenreContainer">
       <img alt="Tania Andrew"
@@ -32,12 +34,11 @@ const ReviewObject=()=>{
   
 const ReviewObjectList=()=>{
     return <main className='ObjectGrid'>
-      <ReviewObject/>
-      <ReviewObject/>
-      <ReviewObject/>
-      <ReviewObject/>
-      <ReviewObject/>
-      <ReviewObject/>
+      {
+        data.map((Book,index)=>{
+          return <ReviewObject  key={index} Title={Book.Title} Author={Book.Author} Image={Book.Image}/>
+        })
+      }
     </main>
 }
   
