@@ -1,12 +1,17 @@
 import './BookReviews.css';
 import data from './data.json';
-import {FaBeer, FaStar} from "react-icons/fa";
+import {useState} from 'react';
 
 
-const ReviewObject=({Title,Author,Image,Genre})=>{
+const ReviewObject=({id,Title,Author,Image,Genre})=>{
+
+  const ClickFunction=(Id)=>{
+    const Item=data.filter((book)=>book.id===Id)[0];
+    console.log(Item);
+  }
 
     return<>
-      <div className="BookCard">
+      <div className="BookCard" onClick={()=>ClickFunction(id)}>
     <img src={Image} className="BookCardInner"/>
       <div className="absolute inset-0 w-full h-full to-bg-black-10 bg-gradient-to-t from-black/80 via-black/50"></div>
     <div className="TextBox">
@@ -17,8 +22,8 @@ const ReviewObject=({Title,Author,Image,Genre})=>{
         {Author}
       </h5>
       <div className="GenreContainer">
-        {Genre.map((gen)=>{
-          return <img alt={gen} src={gen+'.png'} className='Genre'/>
+        {Genre.map((gen,index)=>{
+          return <img key={index} alt={gen} src={gen+'.png'} className='Genre'/>
         })}
       </div>
     </div>
@@ -27,10 +32,13 @@ const ReviewObject=({Title,Author,Image,Genre})=>{
 }
   
 const ReviewObjectList=()=>{
+
+    
+
     return <main className='ObjectGrid'>
       {
         data.map((Book,index)=>{
-          return <ReviewObject  key={index} Title={Book.Title} Author={Book.Author} Image={Book.Image} Genre={Book.Genre}/>
+          return <ReviewObject id={Book.id} key={index} Title={Book.Title} Author={Book.Author} Image={Book.Image} Genre={Book.Genre}/>
         })
       }
     </main>
