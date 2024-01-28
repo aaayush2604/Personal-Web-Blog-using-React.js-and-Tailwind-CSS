@@ -3,16 +3,17 @@ import data from './data.json';
 import {useState} from 'react';
 
 
-const Review=({content})=>{
+const Review=({content,link})=>{
   return <>
     <div className="ReviewCard">
-      {content.slice(0,600)}
+      {content.slice(0,600)}...
+      <a className="Link" href={link} target="_blank">Read the Full Review</a>
     </div>
   </>
 }
 
 
-const ReviewObject=({id,Title,Author,Image,Genre,review})=>{
+const ReviewObject=({id,Title,Author,Image,Genre,review, link})=>{
   const [getReview, SetgetReview]=useState(false);
 
     return<>
@@ -34,7 +35,7 @@ const ReviewObject=({id,Title,Author,Image,Genre,review})=>{
     </div>
     
   </div> 
-  {getReview && <Review content={review}/>}
+  {getReview && <Review content={review} link={link}/>}
     </>
 }
   
@@ -45,7 +46,7 @@ const ReviewObjectList=()=>{
     return <main className='ObjectGrid'>
       {
         data.map((Book,index)=>{
-          return <ReviewObject id={Book.id} key={index} Title={Book.Title} Author={Book.Author} Image={Book.Image} Genre={Book.Genre} review={Book.Review}/>
+          return <ReviewObject id={Book.id} key={index} Title={Book.Title} Author={Book.Author} Image={Book.Image} Genre={Book.Genre} review={Book.Review} link={Book.Link}/>
         })
       }
     </main>
