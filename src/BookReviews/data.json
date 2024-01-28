@@ -3,7 +3,7 @@
         "id":1,
         "Title":"The Sun and The Star",
         "Author":"Rick Riordan",
-        "Image":"/src/BookReviews/images/the_sun_and_the_star.jpg",
+        "Image":"src/BookReviews/images/the_sun_and_the_star.jpg",
         "Genre":["Fantasy","Romance","Action"],
         "Review":"I picked up this book to travel back to the time when I first read the Percy Jackson Books as an 8th Grader, but maybe it was due to my unreasonable expectations, but according to me this book did not possess the ability to do so. I adore Rick Riordan but I won’t call this his best work. The story and the entire plotline was good for me and I appreciated the thought behind exploring how Will should like Nico for all his parts and that includes the darkness he brings with him , but when the book discussed the feelings between Nico and Will I felt like I had already read the whole thing in the caption of a post by some Instagram influencer in their post about mental health. I didn’t feel like the characters came to the conclusions they did, through natural experiences, but because they had to. I have adored the ‘Will & Nico’ couple since it was hinted in the books and eventually came to be a reality, and I hope that if there are stories that are going to follow this one, I can enjoy reading more about them. I liked the whole new stage of evolution that Nico reached with his father and Persephone in this Book and felt that was quite well written.",
         "Link":"https://www.instagram.com/p/C1PKP5bosIs/"
@@ -12,7 +12,7 @@
         "id":2,
         "Title":"The Amulet of Samarkand",
         "Author":"Jonathan Stroud",
-        "Image":"/src/BookReviews/images/amulet_of_samarkand.jpg",
+        "Image":"src/BookReviews/images/amulet_of_samarkand.jpg",
         "Genre":["Action","Fantasy","Romance"],
         "Review":"Witty, Snarky and Funny all while being wonderfully fresh, I found this book to be my long awaited queue to dive back into Fantasy fiction again. For me, Bartimaeus stole the show (as he was supposed to, given by the series title). He was deliciously cunning and amazingly sarcastic, now that is how you make characters worth remembering. For me, this book was a break from all the seriousness around me and also in the content I was reading. From constant bickering to impeccable sarcasm to battles of magic and pure cunning, this book had it all. I recommend this to anyone who is currently looking for a light and fun fantasy fiction. Though I am yet to read the 2nd book in the series, I am devoted to the series already.",
         "Link":"https://www.instagram.com/p/C1_kXIaLu9f/"
@@ -21,7 +21,7 @@
         "id":3,
         "Title":"Where the Crawdads Sing",
         "Author":"Delia Owens",
-        "Image":"/src/BookReviews/images/where_the_crawdads_sing.jpg",
+        "Image":"src/BookReviews/images/where_the_crawdads_sing.jpg",
         "Genre":["Fantasy","Romance","Action"],
         "Review": "In this book, Delila Owens presented me with two powerful themes, First, the cosequence of our words on other people. The words we utter so nonchalantly, without paying any heed, can often become the knives that pierce the hearts of innocent people. Second, how there is more to life than what people percieve of you. No matter what the people tell you, no matter how life tries to trap you in a cage, the audacity to spread your wings is all you need to fly.",
         "Link":"https://www.instagram.com/p/Crs_p-Coghq/"
@@ -30,7 +30,7 @@
         "id":4,
         "Title":"Crime and Punishment",
         "Author":"Fyodor Dostoyevsky",
-        "Image":"/src/BookReviews/images/crime_and_punishment.jpg",
+        "Image":"src/BookReviews/images/crime_and_punishment.jpg",
         "Genre":["Fantasy","Romance","Action"],
         "Review":"Fyodor Dostoyevsky is often regarded as one of the greatest investigators of human psychology and presents a report through his books. I chose this book because, through this particular venture, he is known to dissect a philosophical thought system, that eventually became a precursor to the infamous Russian Revolution of the early 1900s, and as a fan of both history and psychology, this book piqued my interest. I have to say I was quite satisfied with what the book had to say. In my opinion, Dostoyevsky did an excellent job in presenting all the elements of human behavior that take hold of the senses and therefore control all action.",
         "Link":"https://www.instagram.com/p/CrGMETRrAQk/"
