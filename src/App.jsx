@@ -67,7 +67,7 @@ const ContactCard=()=>{
       Follow the Page for 
       <ul className="List">
         <li>Book Reviews</li>
-        <li>Rcommendations</li>
+        <li>Recommendations</li>
         <li>All the latest news on the reading world..</li>
       </ul>
     </div>
