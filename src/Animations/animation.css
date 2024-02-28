@@ -1,0 +1,31 @@
+@keyframes slideUpDown{
+    0%{
+        transform: translateY(-200%);
+        
+    }
+    50%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(260%);
+    }
+}
+  
+
+.HPimg{
+    @apply w-[15vw] h-[15vw] my-[20vh];
+    filter: invert(100%);
+    animation: slideUpDown 5s infinite;
+    
+}
+
+.BoltImg{
+    @apply w-[15vw] h-[15vw] my-[20vh] transform -rotate-12;
+    filter: invert(100%);
+    animation: slideUpDown 5s infinite;
+}
+
+.Animation-Container{
+    position: relative; 
+    overflow: hidden;
+}

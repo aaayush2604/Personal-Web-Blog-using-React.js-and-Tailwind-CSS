@@ -11,6 +11,8 @@
 .BookCard{
   @apply relative grid h-[30rem] w-full max-w-[25rem] flex-col items-end justify-center overflow-hidden rounded-xl bg-white bg-clip-border text-center text-gray-700;
 }
+
+
   
 .BookCard:hover{
   box-shadow: 10px 15px #7b341e;
@@ -69,3 +71,12 @@
   @apply relative h-[30rem] w-full max-w-[25rem] overflow-hidden rounded-xl bg-white bg-clip-border text-center p-7;
 }
 
+@media(max-width:400px){
+  .BookCard{
+    @apply h-[23rem] max-w-[17rem];
+  }
+
+  .BookTitle{
+    @apply text-3xl;
+  }
+}

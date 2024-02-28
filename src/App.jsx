@@ -1,12 +1,29 @@
 import { useState, useEffect } from 'react'
 import '@fontsource/gloria-hallelujah';
 import BookReviews from './BookReviews';
+import Animations from './Animations';
+
+
 
 const Home=()=>{
+  const [width, setWidth]=useState(window.innerWidth);
+
+  useEffect(()=>{
+    console.log(width);
+  },[width])
+
+  window.addEventListener('resize',()=>{
+    setWidth(window.innerWidth);
+  });
+
+
   return <div className="front">
+    <div className='mainHeader'>
     <div className="LandingPage">
       <h1 className="HomeTitle">The Nerd Inside Me</h1>
       <p className="HomeIntroText">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, suscipit magni. Aperiam expedita dicta rerum recusandae beatae labore tempore totam?</p>
+    </div>
+    {(width>900) && <Animations/>}
     </div>
     <div className="waves">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">

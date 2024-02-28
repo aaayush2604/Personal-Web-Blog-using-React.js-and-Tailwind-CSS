@@ -40,6 +40,12 @@ body::-webkit-scrollbar{
   }
 }
 
+@media(max-width: 400px){
+  .HomeTitle{
+    @apply text-[15vw];
+  }
+}
+
 .CurrentRead{
   @apply bg-white flex h-fit justify-around items-center pt-[5vw] w-[100%];
 }
@@ -81,3 +87,7 @@ body::-webkit-scrollbar{
   @apply list-disc;
 }
 
+.mainHeader{
+  @apply flex justify-around;
+  background-color: #7b341e;
+}
