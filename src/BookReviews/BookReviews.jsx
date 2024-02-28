@@ -6,7 +6,7 @@ import {useState} from 'react';
 const Review=({content,link})=>{
   return <>
     <div className="ReviewCard">
-      {content.slice(0,600)}...
+      {content.slice(0,500)}...
       <a className="Link" href={link} target="_blank">Read the Full Review</a>
     </div>
   </>
