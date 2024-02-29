@@ -4,7 +4,8 @@ import {useEffect, useState} from 'react'
 const Animations=()=>{
   const AnimationArray=[
   {Img:'Animations/Hp.png', class:'HPimg'},
-  {Img:'Animations/bolt.png',class:'BoltImg'}
+  {Img:'Animations/bolt.png',class:'BoltImg'},
+  {Img:'Animations/wolf.png',class:'WolfImg'}
   ]
   const [animationImg, setImage]=useState(0);
 

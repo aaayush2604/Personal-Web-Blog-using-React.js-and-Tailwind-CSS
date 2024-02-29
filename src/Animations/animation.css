@@ -16,10 +16,15 @@
     @apply w-[15vw] h-[15vw] my-[20vh];
     filter: invert(100%);
     animation: slideUpDown 5s infinite;
-    
 }
 
 .BoltImg{
+    @apply w-[15vw] h-[15vw] my-[20vh] transform -rotate-12;
+    filter: invert(100%);
+    animation: slideUpDown 5s infinite;
+}
+
+.WolfImg{
     @apply w-[15vw] h-[15vw] my-[20vh] transform -rotate-12;
     filter: invert(100%);
     animation: slideUpDown 5s infinite;
