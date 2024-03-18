@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import '@fontsource/gloria-hallelujah';
 import BookReviews from './BookReviews';
 import Animations from './Animations';
+import ChatPrompt from './ChatPrompt';
 
 
 
@@ -55,6 +56,8 @@ const CurrentRead=()=>{
   </>
 }
 
+
+
 const ContactCard=()=>{
   return <div className="Contact">
     <div className="InstaHandle">
@@ -78,6 +81,7 @@ function App() {
   return <><Home/>
   <BookReviews/>
   <CurrentRead/>
+  <ChatPrompt/>
   <ContactCard/>
   </>
 }

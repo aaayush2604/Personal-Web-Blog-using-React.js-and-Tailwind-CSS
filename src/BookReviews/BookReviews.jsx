@@ -1,13 +1,14 @@
 import './BookReviews.css';
 import data from './data.json';
 import {useState} from 'react';
+import {BrowserRouter as Router,Route,Switch,Link,useParams} from 'react-router-dom';
 
-
-const Review=({content,link})=>{
+const Review=()=>{
+  const {id}=useParams();
+  const book=data.filter((A)=>A.id==id);
   return <>
-    <div className="ReviewCard">
-      {content.slice(0,500)}...
-      <a className="Link" href={link} target="_blank">Read the Full Review</a>
+    <div className='ReviewText'>
+      <h1>{book[0].Title}</h1>
     </div>
   </>
 }
@@ -17,6 +18,7 @@ const ReviewObject=({id,Title,Author,Image,Genre,review, link})=>{
   const [getReview, SetgetReview]=useState(false);
 
     return<>
+    <Link to={`/check${id}`}>
       <div className="BookCard" onClick={()=>SetgetReview(!getReview)}>
     <img src={Image} className="BookCardInner"/>
       <div className="absolute inset-0 w-full h-full to-bg-black-10 bg-gradient-to-t from-black/80 via-black/50"></div>
@@ -33,16 +35,12 @@ const ReviewObject=({id,Title,Author,Image,Genre,review, link})=>{
         })}
       </div>
     </div>
-    
   </div> 
-  {getReview && <Review content={review} link={link}/>}
+  </Link>
     </>
 }
   
 const ReviewObjectList=()=>{
-
-    
-
     return <main className='ObjectGrid'>
       {
         data.map((Book,index)=>{
@@ -52,10 +50,21 @@ const ReviewObjectList=()=>{
     </main>
 }
   
+
 const BookReviews=()=>{
     return <>
+    <Router>
+    <Switch>
+    <Route exact path='/check:id'>
+      <Review></Review>
+    </Route>
+      <Route path='/'>
       <h1 className='PageTitle'>Book Reviews</h1>
       <ReviewObjectList/>
+      </Route>
+      
+    </Switch>
+    </Router>
     </>
 }
 

@@ -80,3 +80,7 @@
     @apply text-3xl;
   }
 }
+
+.ReviewText{
+  @apply w-[85%] h-[50vh] bg-white mx-auto rounded-[40px];
+}

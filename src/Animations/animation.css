@@ -1,36 +1,51 @@
 @keyframes slideUpDown{
     0%{
-        transform: translateY(-200%);
-        
+        transform: translateY(-70%);
     }
     50%{
         transform: translateY(0);
     }
     100%{
-        transform: translateY(260%);
+        transform: translateY(70%);
+    }
+}
+
+@keyframes fade{
+    0%{
+        opacity:0;
+    }
+    50%{
+        opacity:1;
+    }
+    100%{
+        opacity:0;
     }
 }
   
 
 .HPimg{
-    @apply w-[15vw] h-[15vw] my-[20vh];
+    @apply w-[13vw] h-[13vw] my-[20vh];
     filter: invert(100%);
-    animation: slideUpDown 5s infinite;
+    animation: slideUpDown 5s infinite,
+                fade 5s infinite;
 }
 
 .BoltImg{
-    @apply w-[15vw] h-[15vw] my-[20vh] transform -rotate-12;
+    @apply w-[12vw] h-[12vw] my-[20vh] transform -rotate-12;
     filter: invert(100%);
-    animation: slideUpDown 5s infinite;
+    animation: slideUpDown 5s infinite,
+                fade 5s infinite forwards;
 }
 
 .WolfImg{
-    @apply w-[15vw] h-[15vw] my-[20vh] transform -rotate-12;
+    @apply w-[13vw] h-[13vw] my-[20vh] transform -rotate-12;
     filter: invert(100%);
-    animation: slideUpDown 5s infinite;
+    animation: slideUpDown 5s infinite,
+                fade 5s infinite;
 }
 
 .Animation-Container{
     position: relative; 
     overflow: hidden;
+    @apply w-[15vw] h-[70h]
 }
