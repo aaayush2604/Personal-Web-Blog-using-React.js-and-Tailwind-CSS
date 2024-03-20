@@ -81,6 +81,39 @@
   }
 }
 
+.ReviewWindow{
+  @apply bg-white mx-auto rounded-[40px] flex flex-col h-auto justify-around items-center w-[90%];
+}
+
+.ReviewImage{
+  @apply w-[30vw] h-[25vw] w-[20vw] rounded-[20px] shadow-xl;
+}
+
+.ReviewContainer{
+  @apply w-[80vw] h-auto flex justify-around my-6 ;
+}
+
+.LinktoInstaReview{
+  @apply underline;
+}
+
 .ReviewText{
-  @apply w-[85%] h-[50vh] bg-white mx-auto rounded-[40px];
+  @apply text-[1.5vw] w-[40vw];
+}
+
+.ReviewDisp{
+  font-family: 'Gloria Hallelujah', sans-serif;
+  @apply mt-5 flex justify-between w-[80%] items-end text-[#7b341e];
+}
+
+.ReviewSection{
+  @apply flex flex-col justify-around;
+}
+
+.ReviewTitle{
+  @apply text-[3vw];
+}
+
+.ReviewAuthor{
+  @apply text-[2vw];
 }

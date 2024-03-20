@@ -81,7 +81,6 @@ function App() {
   return <><Home/>
   <BookReviews/>
   <CurrentRead/>
-  <ChatPrompt/>
   <ContactCard/>
   </>
 }
