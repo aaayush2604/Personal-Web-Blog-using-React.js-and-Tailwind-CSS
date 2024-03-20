@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import '@fontsource/gloria-hallelujah';
 import BookReviews from './BookReviews';
 import Animations from './Animations';
+import ChatPrompt from './ChatPrompt';
 
 
 
@@ -54,6 +55,8 @@ const CurrentRead=()=>{
   </div>
   </>
 }
+
+
 
 const ContactCard=()=>{
   return <div className="Contact">
