@@ -40,11 +40,7 @@ body::-webkit-scrollbar{
   }
 }
 
-@media(max-width: 400px){
-  .HomeTitle{
-    @apply text-[15vw];
-  }
-}
+
 
 .CurrentRead{
   @apply bg-white flex h-fit justify-around items-center pt-[2vw] w-[100%];
@@ -90,5 +86,20 @@ body::-webkit-scrollbar{
 .mainHeader{
   @apply flex justify-around h-[70vh];
   background-color: #7b341e;
+}
+
+@media(max-width: 400px){
+  .HomeTitle{
+    @apply text-[15vw];
+  }
+}
+
+@media(max-width: 300px){
+  .mainHeader{
+    @apply h-[50vh];
+  }
+  .LandingPage{
+    @apply h-[50vh];
+  }
 }
 
