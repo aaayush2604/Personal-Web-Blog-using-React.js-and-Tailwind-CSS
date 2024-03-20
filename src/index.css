@@ -92,3 +92,11 @@ body::-webkit-scrollbar{
   background-color: #7b341e;
 }
 
+@media(max-width:320px){
+  .mainHeader{
+    @apply h-[50vh];
+  }
+  .LandingPage{
+    @apply h-[50vh];
+  }
+}
