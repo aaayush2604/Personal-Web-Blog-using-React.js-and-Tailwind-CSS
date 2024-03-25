@@ -5,7 +5,7 @@ import {BrowserRouter as Router,Route,Switch,Link,useParams} from 'react-router-
 
 const Review=()=>{
   const {id}=useParams();
-  const book=data.filter((A)=>A.id==id);
+  const book=data.filter((A)=>A.id==id); 
   return <>
     <div className='ReviewWindow'>
     <div className='ReviewDisp'>
