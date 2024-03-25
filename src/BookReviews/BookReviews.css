@@ -86,7 +86,7 @@
 }
 
 .ReviewImage{
-  @apply w-[30vw] h-[25vw] w-[20vw] rounded-[20px] shadow-xl;
+  @apply w-[30vw] h-[25vw] w-[20vw] rounded-[20px] shadow-xl my-auto;
 }
 
 .ReviewContainer{
@@ -98,7 +98,7 @@
 }
 
 .ReviewText{
-  @apply text-[1.5vw] w-[40vw];
+  @apply text-[2vw] w-[40vw];
 }
 
 .ReviewDisp{
@@ -111,9 +111,15 @@
 }
 
 .ReviewTitle{
-  @apply text-[3vw];
+  @apply text-[4vw];
 }
 
 .ReviewAuthor{
-  @apply text-[2vw];
+  @apply text-[2.5vw];
+}
+
+@media(max-width:350px){
+  .ReviewText{
+    @apply text-[4vw];
+  }
 }

@@ -47,7 +47,7 @@ body::-webkit-scrollbar{
 }
 
 .CRdesc{
-  @apply w-[50vw] font-serif text-[2vw];
+  @apply w-[50vw] font-serif text-[3vw] pt-5;
 }
 
 .CRImage{

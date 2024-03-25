@@ -16,7 +16,7 @@ const Review=()=>{
       <div className='ReviewContainer'>
       <img src={book[0].Image} className='ReviewImage'></img>
       <div className='ReviewSection'>
-      <p className='ReviewText'>{book[0].Review.substring(0,300)+'...'}<a className='LinktoInstaReview' href={book[0].Link}>Read the Whole Review</a></p>
+      <p className='ReviewText'>{book[0].Review.substring(0,200)+'...'}<a className='LinktoInstaReview' href={book[0].Link}>Read the Whole Review</a></p>
       <Link to='/' className="px-[2vw] py-0 relative rounded-[30px] group overflow-hidden bg-white text-[#7b341e] inline-block mx-auto text-center border-2 border-black">
       <span className="absolute top-0 left-0 flex w-full h-0 mb-0 transition-all duration-200 ease-out transform translate-y-0 bg-[#7b341e] group-hover:h-full opacity-90 justify-center"></span>
       <span className="relative group-hover:text-white text-[2vw]">Return</span></Link>
